@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PizzaBestellung</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/PizzaAuswahl.js"></script>
+    <link rel="stylesheet" href="css/PizzaAuswahl.css">
+</head>
+<body onload="loadFilteredPizza();">
+<div style="margin-bottom: 50px">
+    <h1 style="display: inline">Pizzeria di Metro</h1>
+    <span>Language:</span>
+    <select id="language" onchange="changeLanguage(false);">
+        <option>Deutsch</option>
+        <option>English</option>
+    </select>
+</div>
+<div style="margin-bottom: 50px">
+    <table id="pizzas">
+    </table>
+</div>
+<div>
+    <label id="lanLieferadresse">Lieferadresse:</label>
+    <label id="lieferadresse"></label><br>
+    <form action="" method="get">
+        <input id="back" type="submit" value="zurück">
+    </form>
+</div>
+</body>
+</html>
